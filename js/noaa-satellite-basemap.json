@@ -1,0 +1,2268 @@
+{
+  "version": 8,
+  "id": "hybrid",
+  "name": "Imagery Hybrid",
+  "sources": {
+    "bmtp": {
+      "tileSize": 256,
+      "type": "raster",
+      "attribution": "<a href='https://www.noaa.gov/'>NOAA</a> | <a href='https://earthobservatory.nasa.gov/'>NASA</a> | <a href='https://www.fsa.usda.gov/'>NAIP</a> | &copy; <a href='https://www.maxar.com/open-data'>2023 Maxar</a> | &copy; <a href='https://www.openstreetmap.org/'>OpenStreetMap Contributors</a>",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/bmtp/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -180.0,
+        -89.10000454,
+        180.0,
+        89.1
+      ],
+      "maxzoom": 8
+    },
+    "usvipr_22": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/usvipr_22/{z}/{x}/{y}"
+      ],
+      "bounds": [
+       -68.00225553,
+        17.62257498,
+        -64.56002643,
+        18.56498475
+      ]
+    },
+    "guam-nmi-v1": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/guam-nmi-v1/{z}/{x}/{y}"
+      ],
+      "bounds": [
+       144.59282813,
+       13.20357648,
+       146.09301466,
+       20.58111046
+      ]
+    },
+    "y_md_2021": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/y_md_2021/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -76.5626,
+        39.02490188,
+        -75.92489662,
+        39.5876
+      ]
+    },
+    "x_fl_2021": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/x_fl_2021/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -87.0501,
+        30.29990099,
+        -85.68739725,
+        30.8001
+      ]
+    },
+    "z1_2022": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/z1_2022/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -73.75656767,
+        40.93351663,
+        -66.92614747,
+        47.50297485
+      ]
+    },
+    "akl2020": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/akl2020/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -179.20898437,
+        51.15235826,
+        179.82421796,
+        71.45507813
+      ]
+    },
+    "ak_2020": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/ak_2020/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -179.20898437,
+        51.15234623,
+        179.82422421,
+        71.45507813
+      ]
+    },
+    "hi_2022": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/hi_2022/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -160.31581169,
+        18.87002741,
+        -154.74644411,
+        22.25305519
+      ]
+    },
+    "de_2021": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/de_2021/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -75.82219935,
+        38.43326512,
+        -74.99766369,
+        39.8782252
+      ]
+    },
+    "md_2021": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/md_2021/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -79.51438109,
+        37.87190886,
+        -74.99768565,
+        39.7768596
+      ]
+    },
+    "nj_2019": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/nj_2019/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -75.56537809,
+        38.87314691,
+        -73.87150424,
+        41.37705428
+      ]
+    },
+    "fl_2021": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/fl_2021/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -87.69149462,
+        24.48613772,
+        -79.99148769,
+        31.07389435
+      ]
+    },
+    "ga_2021": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/ga_2021/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -85.63153516,
+        30.30895248,
+        -80.81004102,
+        35.06656355
+      ]
+    },
+    "ia_2021": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/ia_2021/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -96.69620572,
+        40.36853752,
+        -90.10718703,
+        43.58555269
+      ]
+    },
+    "il_2021": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/il_2021/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -91.57011787,
+        36.93109489,
+        -87.43275684,
+        42.58504345
+      ]
+    },
+    "in_2020": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/in_2020/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -88.13150086,
+        37.74514954,
+        -84.73133817,
+        41.8244598
+      ]
+    },
+    "ky_2020": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/ky_2020/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -89.63351009,
+        36.43093488,
+        -81.93275031,
+        39.19388189
+      ]
+    },
+    "mi_2022": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/mi_2022/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -90.44951993,
+        41.66923344,
+        -82.36846211,
+        48.25438453
+      ]
+    },
+    "mn_2021": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/mn_2021/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -97.26300151,
+        43.42498927,
+        -89.42706923,
+        49.44195495
+      ]
+    },
+    "nc_2022": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/nc_2022/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -84.38419227,
+        33.79426942,
+        -75.43123001,
+        36.62967479
+      ]
+    },
+    "ny_2019": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/ny_2019/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -79.82197529,
+        40.43454529,
+        -71.80013416,
+        45.07212339
+      ]
+    },
+    "oh_2021": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/oh_2021/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -84.88889394,
+        38.36874353,
+        -80.49316467,
+        42.00251388
+      ]
+    },
+    "pa_2022": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/pa_2022/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -80.56912613,
+        39.67251261,
+        -74.6826925,
+        42.31673634
+      ]
+    },
+    "sc_2021": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/sc_2021/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -83.38297278,
+        31.99806224,
+        -78.49507769,
+        35.25497121
+      ]
+    },
+    "va_2021": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/va_2021/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -83.69489974,
+        36.48071936,
+        -75.18333924,
+        39.50572633
+      ]
+    },
+    "wv_2020": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/wv_2020/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -82.69232991,
+        37.18369568,
+        -77.67603725,
+        40.69123907
+      ]
+    },
+    "mo_2020": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/mo_2020/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -95.82088907,
+        35.92798003,
+        -89.05151474,
+        40.64157657
+      ]
+    },
+    "or_2020": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/or_2020/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -124.63142291,
+        41.90655954,
+        -116.43351822,
+        46.31854033
+      ]
+    },
+    "wi_2020": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/wi_2020/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -92.94098577,
+        42.42398637,
+        -86.74560498,
+        47.13623033
+      ]
+    },
+    "ar_2021": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/ar_2021/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -94.6362022,
+        32.99053638,
+        -89.61505036,
+        36.51734048
+      ]
+    },
+    "al_2019": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/al_2019/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -88.51113952,
+        30.18205344,
+        -84.86950699,
+        35.07051073
+      ]
+    },
+    "al_2021": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/al_2021/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -88.44112137,
+        30.1846072,
+        -87.37161341,
+        31.00340814
+      ]
+    },
+    "ms_2020": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/ms_2020/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -91.69360257,
+        30.11744088,
+        -88.05451341,
+        35.01822063
+      ]
+    },
+    "ms_2021": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/ms_2021/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -89.8800861,
+        30.12098472,
+        -88.37092055,
+        31.00410389
+      ]
+    },
+    "la_2019": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/la_2019/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -94.07562499,
+        28.87072632,
+        -88.80274402,
+        33.07324078
+      ]
+    },
+    "la_2021": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/la_2021/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -93.94019994,
+        28.87202412,
+        -88.80923389,
+        31.00329982
+      ]
+    },
+    "wa_2021": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/wa_2021/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -124.2559828,
+        45.49701827,
+        -116.87177979,
+        49.08592078
+      ]
+    },
+    "wa_2020": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/wa_2020/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -124.8180551,
+        45.97075132,
+        -117.80021083,
+        49.09805107
+      ]
+    },
+    "ks_2021": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/ks_2021/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -102.09368466,
+        36.92108533,
+        -94.55082883,
+        40.0821946
+      ]
+    },
+    "ne_2020": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/ne_2020/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -104.08068277,
+        39.93235408,
+        -95.24459702,
+        43.07619607
+      ]
+    },
+    "ok_2019": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/ok_2019/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -103.07953727,
+        33.55845402,
+        -94.36729502,
+        37.07351029
+      ]
+    },
+    "sd_2021": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/sd_2021/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -104.07928936,
+        42.43249462,
+        -96.36841998,
+        46.03531926
+      ]
+    },
+    "co_2021": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/co_2021/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -109.09021699,
+        36.91082653,
+        -101.96065679,
+        41.09933946
+      ]
+    },
+    "mt_2021": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/mt_2021/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -116.0829953,
+        44.30896607,
+        -103.97928164,
+        49.08370458
+      ]
+    },
+    "nd_2021": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/nd_2021/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -104.08033008,
+        45.8591993,
+        -96.48475505,
+        49.07422294
+      ]
+    },
+    "nm_2020": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/nm_2020/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -109.09696968,
+        31.29575727,
+        -102.97013067,
+        37.0848931
+      ]
+    },
+    "wy_2019": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/wy_2019/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -111.06683256,
+        40.9163939,
+        -103.98068918,
+        45.09032102
+      ]
+    },
+    "az_2021": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/az_2021/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -114.88762605,
+        31.29565307,
+        -108.9533188,
+        37.09579625
+      ]
+    },
+    "id_2021": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/id_2021/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -117.25396147,
+        41.90519944,
+        -110.99745728,
+        49.06762239
+      ]
+    },
+    "ut_2021": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/ut_2021/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -114.11368374,
+        36.91612357,
+        -108.95928144,
+        42.07272966
+      ]
+    },
+    "nv_2019": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/nv_2019/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -120.10092657,
+        34.99425736,
+        -113.95128892,
+        42.0685168
+      ]
+    },
+    "ca_2022": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/ca_2022/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -124.44124077,
+        32.49807809,
+        -114.12060106,
+        42.06505843
+      ]
+    },
+    "tx_2020": {
+      "tileSize": 256,
+      "type": "raster",
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/raster/tx_2020/{z}/{x}/{y}"
+      ],
+      "bounds": [
+        -106.69077551,
+        25.80994339,
+        -93.4975345,
+        36.56592874
+      ]
+    },
+    "openmaptiles": {
+      "tiles": [
+        "https://mapscdn.ngs.noaa.gov/vector/osm-2022-05-02-north-america/{z}/{x}/{y}.pbf"
+      ],
+      "type": "vector",
+      "minzoom": 0,
+      "maxzoom": 18
+    }
+  },
+  "layers": [
+     {
+      "id": "bmtp",
+      "type": "raster",
+      "source": "bmtp",
+      "minzoom": 0,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "z1_2022",
+      "type": "raster",
+      "source": "z1_2022",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "de_2021",
+      "type": "raster",
+      "source": "de_2021",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "md_2021",
+      "type": "raster",
+      "source": "md_2021",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "nj_2019",
+      "type": "raster",
+      "source": "nj_2019",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "fl_2021",
+      "type": "raster",
+      "source": "fl_2021",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "ga_2021",
+      "type": "raster",
+      "source": "ga_2021",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "ia_2021",
+      "type": "raster",
+      "source": "ia_2021",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "il_2021",
+      "type": "raster",
+      "source": "il_2021",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "in_2020",
+      "type": "raster",
+      "source": "in_2020",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "ky_2020",
+      "type": "raster",
+      "source": "ky_2020",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "mi_2022",
+      "type": "raster",
+      "source": "mi_2022",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "mn_2021",
+      "type": "raster",
+      "source": "mn_2021",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "nc_2022",
+      "type": "raster",
+      "source": "nc_2022",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "ny_2019",
+      "type": "raster",
+      "source": "ny_2019",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "oh_2021",
+      "type": "raster",
+      "source": "oh_2021",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "pa_2022",
+      "type": "raster",
+      "source": "pa_2022",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "sc_2021",
+      "type": "raster",
+      "source": "sc_2021",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "va_2021",
+      "type": "raster",
+      "source": "va_2021",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "wv_2020",
+      "type": "raster",
+      "source": "wv_2020",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "mo_2020",
+      "type": "raster",
+      "source": "mo_2020",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "or_2020",
+      "type": "raster",
+      "source": "or_2020",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "wi_2020",
+      "type": "raster",
+      "source": "wi_2020",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "al_2019",
+      "type": "raster",
+      "source": "al_2019",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "al_2021",
+      "type": "raster",
+      "source": "al_2021",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "ar_2021",
+      "type": "raster",
+      "source": "ar_2021",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "la_2019",
+      "type": "raster",
+      "source": "la_2019",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "la_2021",
+      "type": "raster",
+      "source": "la_2021",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "ms_2020",
+      "type": "raster",
+      "source": "ms_2020",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "ms_2021",
+      "type": "raster",
+      "source": "ms_2021",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "wa_2021",
+      "type": "raster",
+      "source": "wa_2021",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "wa_2020",
+      "type": "raster",
+      "source": "wa_2020",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "ks_2021",
+      "type": "raster",
+      "source": "ks_2021",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "ne_2020",
+      "type": "raster",
+      "source": "ne_2020",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "ok_2019",
+      "type": "raster",
+      "source": "ok_2019",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "sd_2021",
+      "type": "raster",
+      "source": "sd_2021",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "co_2021",
+      "type": "raster",
+      "source": "co_2021",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "mt_2021",
+      "type": "raster",
+      "source": "mt_2021",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "nd_2021",
+      "type": "raster",
+      "source": "nd_2021",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "nm_2020",
+      "type": "raster",
+      "source": "nm_2020",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "wy_2019",
+      "type": "raster",
+      "source": "wy_2019",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "az_2021",
+      "type": "raster",
+      "source": "az_2021",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "id_2021",
+      "type": "raster",
+      "source": "id_2021",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "ut_2021",
+      "type": "raster",
+      "source": "ut_2021",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "nv_2019",
+      "type": "raster",
+      "source": "nv_2019",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "ca_2022",
+      "type": "raster",
+      "source": "ca_2022",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "tx_2020",
+      "type": "raster",
+      "source": "tx_2020",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "akl2020",
+      "type": "raster",
+      "source": "akl2020",
+      "minzoom": 0,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "ak_2020",
+      "type": "raster",
+      "source": "ak_2020",
+      "minzoom": 0,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "hi_2022",
+      "type": "raster",
+      "source": "hi_2022",
+      "minzoom": 0,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+     {
+      "id": "usvipr_22",
+      "type": "raster",
+      "source": "usvipr_22",
+      "minzoom": 0,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "guam-nmi-v1",
+      "type": "raster",
+      "source": "guam-nmi-v1",
+      "minzoom": 0,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "y_md_2021",
+      "type": "raster",
+      "source": "y_md_2021",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "x_fl_2021",
+      "type": "raster",
+      "source": "x_fl_2021",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1
+      },
+      "filter": [
+        "all"
+      ]
+    },
+    {
+      "id": "tunnel",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "miter"
+      },
+      "paint": {
+        "line-color": "rgba(255, 255, 255, 0.2)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          0.5,
+          20,
+          30
+        ],
+        "line-dasharray": [
+          0.28,
+          0.14
+        ]
+      },
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "==",
+          "brunnel",
+          "tunnel"
+        ],
+        [
+          "in",
+          "class",
+          "motorway",
+          "primary",
+          "secondary",
+          "tertiary",
+          "trunk"
+        ]
+      ]
+    },
+    {
+      "id": "path",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "layout": {
+        "line-cap": "square",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-color": "rgba(247, 247, 247, 0.33)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          14,
+          0.5,
+          20,
+          4
+        ],
+        "line-dasharray": [
+          1,
+          1
+        ]
+      },
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "in",
+          "class",
+          "path",
+          "track"
+        ]
+      ]
+    },
+    {
+      "id": "road",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 6,
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": {
+          "stops": [
+            [
+              8,
+              "rgba(255, 255, 255, 0.2)"
+            ],
+            [
+              14,
+              "rgba(255, 255, 255, 0.4)"
+            ],
+            [
+              18,
+              "rgba(255, 255, 255, 0.5)"
+            ]
+          ]
+        },
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          [
+            "match",
+            [
+              "get",
+              "class"
+            ],
+            [
+              "motorway",
+              "motorway_link"
+            ],
+            1,
+            0
+          ],
+          7,
+          [
+            "match",
+            [
+              "get",
+              "class"
+            ],
+            [
+              "motorway",
+              "motorway_link"
+            ],
+            1.4,
+            0
+          ],
+          8,
+          [
+            "match",
+            [
+              "get",
+              "class"
+            ],
+            [
+              "motorway",
+              "motorway_link",
+              "primary",
+              "trunk"
+            ],
+            0.75,
+            0
+          ],
+          9,
+          [
+            "match",
+            [
+              "get",
+              "class"
+            ],
+            [
+              "secondary",
+              "tertiary"
+            ],
+            0.7,
+            1
+          ],
+          10,
+          [
+            "match",
+            [
+              "get",
+              "class"
+            ],
+            [
+              "motorway",
+              "motorway_link"
+            ],
+            1.3,
+            1.3
+          ],
+          14,
+          [
+            "match",
+            [
+              "get",
+              "class"
+            ],
+            [
+              "minor",
+              "service"
+            ],
+            0.5,
+            2.4
+          ]
+        ]
+      },
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "!in",
+          "class",
+          "rail",
+          "ferry",
+          "path",
+          "track"
+        ],
+        [
+          "!=",
+          "brunnel",
+          "tunnel"
+        ]
+      ]
+    },
+    {
+      "id": "railway",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgba(179, 170, 158, 0.2)",
+        "line-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          0.5,
+          16,
+          1.3
+        ]
+      },
+      "filter": [
+        "==",
+        "class",
+        "rail"
+      ]
+    },
+    {
+      "id": "admin_sub",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "boundary",
+      "minzoom": 3,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgba(194, 194, 194, 0.5)",
+        "line-dasharray": [
+          2,
+          1
+        ]
+      },
+      "filter": [
+        "in",
+        "admin_level",
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "id": "admin_country-dark",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "boundary",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgba(0, 0, 0, 0.51)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          3,
+          0.5,
+          21,
+          32
+        ],
+        "line-offset": 1
+      },
+      "filter": [
+        "all",
+        [
+          "<=",
+          "admin_level",
+          2
+        ],
+        [
+          "==",
+          "$type",
+          "LineString"
+        ]
+      ]
+    },
+    {
+      "id": "admin_country",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "boundary",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgba(226, 226, 226, 1)",
+        "line-width": [
+          "interpolate",
+          [
+            "exponential",
+            1.5
+          ],
+          [
+            "zoom"
+          ],
+          3,
+          0.5,
+          21,
+          32
+        ]
+      },
+      "filter": [
+        "all",
+        [
+          "<=",
+          "admin_level",
+          2
+        ],
+        [
+          "==",
+          "$type",
+          "LineString"
+        ]
+      ]
+    },
+    {
+      "id": "road_label",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "transportation_name",
+      "layout": {
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": [
+          "interpolate",
+          [
+            "linear",
+            0.75,
+            1,
+            0.75,
+            1
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          8,
+          15,
+          9
+        ],
+        "text-field": "{name:latin} {name:nonlatin}",
+        "text-transform": "none",
+        "symbol-placement": "line",
+        "text-letter-spacing": 0.1,
+        "text-rotation-alignment": "map"
+      },
+      "paint": {
+        "text-color": "rgba(255, 255, 255, 1)",
+        "text-halo-color": "rgba(43, 43, 43, 1)",
+        "text-halo-width": 1
+      },
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "!=",
+          "subclass",
+          "ferry"
+        ]
+      ]
+    },
+    {
+      "id": "place_label",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "place",
+      "minzoom": 3,
+      "maxzoom": 16,
+      "layout": {
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": [
+          "interpolate",
+          [
+            "linear",
+            0.5,
+            1,
+            0.5,
+            1
+          ],
+          [
+            "zoom"
+          ],
+          3,
+          [
+            "match",
+            [
+              "get",
+              "class"
+            ],
+            "city",
+            11,
+            10
+          ],
+          6,
+          [
+            "match",
+            [
+              "get",
+              "class"
+            ],
+            "city",
+            14.5,
+            11
+          ],
+          8,
+          [
+            "match",
+            [
+              "get",
+              "class"
+            ],
+            "city",
+            16,
+            12
+          ],
+          10,
+          [
+            "match",
+            [
+              "get",
+              "class"
+            ],
+            "city",
+            20,
+            13
+          ]
+        ],
+        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-max-width": 10
+      },
+      "paint": {
+        "text-color": "rgba(255, 255, 255, 1)",
+        "text-halo-blur": 0.5,
+        "text-halo-color": "rgba(0, 0, 0, 1)",
+        "text-halo-width": 1
+      },
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          "!in",
+          "class",
+          "country",
+          "state"
+        ]
+      ]
+    },
+    {
+      "id": "state_label",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "place",
+      "minzoom": 3,
+      "maxzoom": 12,
+      "layout": {
+        "text-font": [
+          "Noto Sans Italic"
+        ],
+        "text-size": [
+          "interpolate",
+          [
+            "linear",
+            0.75,
+            1,
+            0.75,
+            1
+          ],
+          [
+            "zoom"
+          ],
+          1,
+          [
+            "step",
+            [
+              "get",
+              "rank"
+            ],
+            13,
+            1,
+            12,
+            2,
+            12
+          ],
+          4,
+          [
+            "step",
+            [
+              "get",
+              "rank"
+            ],
+            15,
+            1,
+            13,
+            2,
+            13
+          ],
+          6,
+          [
+            "step",
+            [
+              "get",
+              "rank"
+            ],
+            23,
+            1,
+            17,
+            2,
+            17
+          ],
+          9,
+          [
+            "step",
+            [
+              "get",
+              "rank"
+            ],
+            27,
+            1,
+            20,
+            2,
+            20
+          ]
+        ],
+        "text-field": "{name:latin}",
+        "text-max-width": 10
+      },
+      "paint": {
+        "text-color": "rgba(255, 255, 255, 1)",
+        "text-halo-blur": 1,
+        "text-halo-color": "rgba(0, 0, 0, 1)",
+        "text-halo-width": 1
+      },
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          "in",
+          "class",
+          "state"
+        ],
+        [
+          "<",
+          "rank",
+          3
+        ]
+      ]
+    },
+    {
+      "id": "country_label",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "place",
+      "maxzoom": 12,
+      "layout": {
+        "text-font": [
+          "Noto Sans Bold"
+        ],
+        "text-size": [
+          "interpolate",
+          [
+            "linear",
+            0.75,
+            1,
+            0.75,
+            1
+          ],
+          [
+            "zoom"
+          ],
+          1,
+          [
+            "step",
+            [
+              "get",
+              "rank"
+            ],
+            13,
+            1,
+            12,
+            2,
+            12
+          ],
+          4,
+          [
+            "step",
+            [
+              "get",
+              "rank"
+            ],
+            15,
+            1,
+            14,
+            2,
+            14
+          ],
+          6,
+          [
+            "step",
+            [
+              "get",
+              "rank"
+            ],
+            23,
+            1,
+            18,
+            2,
+            18
+          ],
+          9,
+          [
+            "step",
+            [
+              "get",
+              "rank"
+            ],
+            27,
+            1,
+            22,
+            2,
+            22
+          ]
+        ],
+        "text-field": "{name:latin}",
+        "text-max-width": 10
+      },
+      "paint": {
+        "text-color": "rgba(255, 255, 255, 1)",
+        "text-halo-blur": 1,
+        "text-halo-color": "rgba(0, 0, 0, 1)",
+        "text-halo-width": 1
+      },
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          "in",
+          "class",
+          "country"
+        ]
+      ]
+    }
+  ],
+  "metadata": {
+    "maptiler:copyright": "This style was generated on MapTiler Cloud. Usage outside of MapTiler Cloud requires valid MapTiler Data Package: https://www.maptiler.com/data/package/ -- please contact us."
+  },
+  "glyphs": "https://mapscdn.ngs.noaa.gov/fonts/{fontstack}/{range}.pbf",
+  "bearing": 0,
+  "pitch": 0,
+  "center": [
+    0,
+    0
+  ],
+  "zoom": 0
+}
