@@ -122,6 +122,7 @@ span {
   text-decoration: none;
   transition: background-color 0.3s;
   opacity: 0.5;
+  pointer-events: none;
 }
 
 /* .menu-incactive:hover {
@@ -132,9 +133,10 @@ span {
 #primaryselection {
   display: flex;
   position: relative;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 15vh;
+  text-align: center;
 }
 
 .primaryflex {
@@ -272,6 +274,12 @@ span {
     line-height: 4vh;
   }
 
+  .menu-incactive {
+    line-height: 4vh;
+    font-size: 1.5vh;
+  }
+
+
   #homeimage {
     background-size:cover;
     height: 70vh;
@@ -282,9 +290,9 @@ span {
     margin-bottom: 2vh;
   }
 
-  #primaryselection {
+  /* #primaryselection {
     height: 6vh;
-  }
+  } */
 
   .primaryflex {
     margin: 0 1vh;
@@ -300,5 +308,9 @@ span {
     margin-top: 0;
     line-height: 5vh;
     font-size: 2vh;
+  }
+
+  .forecast {
+    width: 80%;
   }
 }
