@@ -23,6 +23,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 0;
 }
 
 .slider-container {
@@ -84,6 +85,12 @@
   height: 20vh;
   text-align: center;
   font-size: 2vh;
+}
+
+#map-info {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 1024px) {
