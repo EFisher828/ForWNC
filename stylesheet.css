@@ -131,10 +131,10 @@ span {
 } */
 
 #primaryselection {
-  display: flex;
+  /* display: flex;
   position: relative;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  align-items: center; */
   height: 15vh;
   text-align: center;
 }
@@ -210,6 +210,7 @@ span {
   margin-left: auto;
   margin-right: auto;
   width: max-content;
+  max-width: 80%;
   display: block;
 }
 
@@ -306,11 +307,16 @@ span {
     padding: 2vh;
     height: max-content;
     margin-top: 0;
-    line-height: 5vh;
+    line-height: 2.5vh;
     font-size: 2vh;
   }
 
   .forecast {
     width: 80%;
   }
+
+  #aboutdescription {
+    text-align: left;
+  }
+
 }

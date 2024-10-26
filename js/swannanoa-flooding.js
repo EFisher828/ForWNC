@@ -10,6 +10,12 @@ const map = new maplibregl.Map({
 
 map.on('load', () => {
 
+  var detailsElement = document.querySelector('.mapboxgl-compact-show');
+  if (detailsElement) {
+        detailsElement.removeAttribute('open');
+        detailsElement.classList.remove('maplibregl-compact-show', 'mapboxgl-compact-show');
+    }
+
   // Define the raster source
   map.addSource('20241005a_RGB', {
       'type': 'raster',
@@ -131,26 +137,26 @@ document.getElementById('flood-opacity-slider').addEventListener('input', update
 document.getElementById('building-opacity-slider').addEventListener('input', updateBuildingLayerOpacity);
 
 // Add the click event listener for the 'building-layer'
-map.on('click', 'building-layer', function (e) {
-    // Check if the clicked feature has the _mean attribute
-    if (e.features.length && e.features[0].properties._mean !== undefined) {
-        // Get the coordinates of the clicked feature
-        const coordinates = e.lngLat;
-        // Get the _mean attribute value
-        const meanValue = e.features[0].properties._mean;
-
-        // Ensure the coordinates are set correctly for the popup
-        while (Math.abs(coordinates[0] - e.lngLat.lng) > 180) {
-            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-        }
-
-        // Create a popup and set its content and position
-        new maplibregl.Popup()
-            .setLngLat(coordinates)
-            .setHTML(`<strong>Estimated Flood Depth:</strong> ${meanValue.toFixed(1)}'`)
-            .addTo(map);
-    }
-});
+// map.on('click', 'building-layer', function (e) {
+//     // Check if the clicked feature has the _mean attribute
+//     if (e.features.length && e.features[0].properties._mean !== undefined) {
+//         // Get the coordinates of the clicked feature
+//         const coordinates = e.lngLat;
+//         // Get the _mean attribute value
+//         const meanValue = e.features[0].properties._mean;
+//
+//         // Ensure the coordinates are set correctly for the popup
+//         while (Math.abs(coordinates[0] - e.lngLat.lng) > 180) {
+//             coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+//         }
+//
+//         // Create a popup and set its content and position
+//         new maplibregl.Popup()
+//             .setLngLat(coordinates)
+//             .setHTML(`<strong>Estimated Flood Depth:</strong> ${meanValue.toFixed(1)}'`)
+//             .addTo(map);
+//     }
+// });
 
 // Change the cursor to pointer when hovering over the 'building-layer'
 map.on('mouseenter', 'building-layer', function () {

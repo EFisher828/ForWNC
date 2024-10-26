@@ -19,6 +19,7 @@
     border-radius: 0.2vh;
     font-size: 2vh;
     box-shadow: 0 0 1vh black;
+    text-align: center;
 }
 
 .slider-container {
@@ -95,5 +96,9 @@
       top: 16vh;
       right: 2.5vh;
       z-index: 1;
+  }
+
+  #map {
+    height: 75vh;
   }
 }
