@@ -3,6 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swannanoa, NC Flood Map - Hurricane Helene Analysis</title>
+    <meta name="description" content="This map portrays the estimated extent and depth of flooding in Swannanoa, North Carolina during Hurricane Helene's passage on September 27, 2024."/>
+    <meta content="Swannanoa, NC Flood Map - Hurricane Helene Analysis" property="og:title"/>
+    <meta content="This map portrays the estimated extent and depth of flooding in Swannanoa, North Carolina during Hurricane Helene's passage on September 27, 2024." property="og:description"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@EFisherWX" />
+    <meta name="twitter:title" content="Swannanoa, NC Flood Map - Hurricane Helene Analysis"/>
+    <meta name="twitter:description" content="This map portrays the estimated extent and depth of flooding in Swannanoa, North Carolina during Hurricane Helene's passage on September 27, 2024."/>
+    <meta name="twitter:image" content="https://www.forwnc.org/Images/swannanoa-flooding-twitter.png" />
+    <meta property="og:type" content="website"/>
+    <meta content="summary_large_image" name="twitter:card"/>
+    <meta name="geo.placename" content="United States"/>
+    <meta http-equiv="content-language" content="en-us">
     <link rel="stylesheet" href="../stylesheet.css">
     <link rel="stylesheet" href="../css/swannanoa-flooding.css">
     <title></title>
@@ -28,7 +41,7 @@
     </div>
     <div id="mainbody">
       <div id="opacity-control" class="opacity-control">
-          <div id="opacity-toggle" class="control-button">☰</div>
+          <div id="opacity-toggle" class="control-button"><img src="../Images/icon-map-layers.png" alt="legend icon"></div>
           <div id="opacity-slider-container" class="slider-container">
               <!-- <p id="opacity-slider-title">Opacity Controls</p> -->
               <div class='slider-pair'>
@@ -45,8 +58,11 @@
               </div>
           </div>
       </div>
+      <div id="info-control" class="info-control">
+          <a href="#map-info" class="section-link"><div id="info-toggle" class="control-button">i</div></a>
+      </div>
       <div id="legend-control" class="legend-control">
-          <div id="legend-toggle" class="control-button">i</div>
+          <div id="legend-toggle" class="control-button"><img src="../Images/icon-map-legend.png" alt="legend icon"></div>
           <div id="legend-slider-container" class="slider-container">
               <div class='slider-pair'>
                 <div class="continuous-labels">
@@ -66,10 +82,13 @@
           </div>
       </div>
       <div id="map"></div>
-      <div id="map-info">
-        <p>This map portrays the estimated extent and depth of flooding in Swannanoa, North Carolina.</p>
-        <p>The precise depth of the floodwaters is hidden at this time as we evaluate the accuracy of our flood indundation model. We have noted some inacurracies in the damage estimate, so please view the imagery basemap for a true depiction of the observed damage.</p>
-        <p>Please note that these results are preliminary. The extent of the floodwaters and the building impacts may change during further analysis.</p>
+      <div id="map-info-container">
+        <div id="map-info">
+          <p>This map portrays the estimated extent and depth of flooding in Swannanoa, North Carolina.</p>
+          <p>The precise depth of the floodwaters is hidden at this time as we evaluate the accuracy of our flood indundation model. We have noted some inacurracies in the damage estimate, so please view the imagery basemap for a true depiction of the observed damage.</p>
+          <p>Please note that these results are preliminary. The extent of the floodwaters and the building impacts may change during further analysis.</p>
+          <p>Direct all questions to <a href="https://twitter.com/EFisherWX">Evan Fisher (@EFisherWX) on Twitter/X</a>.</p>
+        </div>
       </div>
     </div>
     <script type="text/javascript" src="../main.js"></script>
