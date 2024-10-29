@@ -747,6 +747,18 @@ const media = {
     'url': 'https://twitter.com/thinktankfranks/status/1850733198839304304',
     'latitude': 35.5706,
     'longitude': -82.5371
+  },
+  124: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/micahsherrill/status/1842646329996267606',
+    'latitude': 35.4533,
+    'longitude': -82.2903
+  },
+  125: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/BrugalPapi/status/1840428939577077979',
+    'latitude': 35.4688,
+    'longitude': -82.3267
   }
 }
 
