@@ -36,29 +36,50 @@
   padding: 0;
 }
 
+#tweet-container {
+  margin: 1vh;
+}
+
+#map-info {
+  margin: 2vh 0;
+}
+
+#map-info p {
+  font-size: 2.5vh;
+  line-height: 3.5vh;
+}
+
 .maplibregl-popup-content {
   box-shadow: 0 0 1vh black !important;
   border-radius: 0vh !important;
   min-width: 30vw;
 }
 
-.opacity-control {
-    position: absolute;
-    top: 2vh;
-    left: 2.5vh;
-    z-index: 1;
-}
-
 .info-control {
-    position: absolute;
-    top: 2vh;
-    right: 9.5vh;
-    z-index: 1;
-}
-
-.legend-control {
     position: absolute;
     top: 2vh;
     right: 2.5vh;
     z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  #map-info {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
+
+  #top-container {
+    flex-direction: column;
+  }
+
+  #info-container {
+    height: 50vh;
+    width: 100%;
+  }
+
+  #map-container {
+    height: 40vh;
+    width: 100%;
+    margin-top: 2vh;
+  }
 }

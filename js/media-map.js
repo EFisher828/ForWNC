@@ -4,8 +4,8 @@ const source = 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json';
 const map = new maplibregl.Map({
   container: 'map',
   style: '../js/roads-basemap-with-terrain.json',
-  center: [-82.3923,35.6022],
-  zoom: 11
+  center: [-82.2315, 35.7583],
+  zoom: 8.17
   // maxBounds: [-82.41357860258921, 35.59428129648903, -82.37105317540306, 35.60931855025633]
 });
 
@@ -394,12 +394,12 @@ const media = {
     'latitude': 35.2644,
     'longitude': -82.3211
   },
-  65: {
-    'type': 'tweet',
-    'url': 'https://twitter.com/EthanClarkWX/status/1841658278452887666',
-    'latitude': 36.0157,
-    'longitude': -82.3513
-  },
+  // 65: {
+  //   'type': 'tweet',
+  //   'url': 'https://twitter.com/EthanClarkWX/status/1841658278452887666',
+  //   'latitude': 36.0157,
+  //   'longitude': -82.3513
+  // },
   66: {
     'type': 'tweet',
     'url': 'https://twitter.com/babowling12/status/1841257851802546626',
@@ -429,6 +429,324 @@ const media = {
     'url': 'https://twitter.com/JudgeBobOrr/status/1840135731039101265',
     'latitude': 35.8850,
     'longitude': -82.2846
+  },
+  71: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/AmericanaMama_/status/1841670960375627800',
+    'latitude': 35.8796,
+    'longitude': -82.2229
+  },
+  72: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/Lucyblululu/status/1844523857425608856',
+    'latitude': 35.9159,
+    'longitude': -82.2473
+  },
+  73: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/AmericanaMama_/status/1841670036223668601',
+    'latitude': 35.9074,
+    'longitude': -82.2157
+  },
+  74: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/mikealsip/status/1841687120315891825',
+    'latitude': 35.8635,
+    'longitude': -82.2012
+  },
+  75: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/Justin__Berger/status/1841287831085285486',
+    'latitude': 35.9091,
+    'longitude': -82.2135
+  },
+  76: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/iveybyrd/status/1839785290916941952',
+    'latitude': 35.9059,
+    'longitude': -82.1878
+  },
+  77: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/LeanneSpurs/status/1850223843891138943',
+    'latitude': 35.9167,
+    'longitude': -82.0714
+  },
+  78: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/LeanneSpurs/status/1850149775716352079',
+    'latitude': 35.9134,
+    'longitude': -82.0669
+  },
+  79: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/LeanneSpurs/status/1850122190475190599',
+    'latitude': 35.9144,
+    'longitude': -82.0671
+  },
+  80: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/RGVTRUTH1/status/1850907802702631414',
+    'latitude': 35.8907,
+    'longitude': -82.2823
+  },
+  81: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/RGVTRUTH1/status/1842185298010382679',
+    'latitude': 35.8458,
+    'longitude': -82.3050
+  },
+  82: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/ryantyre/status/1848941099114492159',
+    'latitude': 35.8477,
+    'longitude': -82.3075
+  },
+  83: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/ryantyre/status/1848954390914179520',
+    'latitude': 35.8842,
+    'longitude': -82.2850
+  },
+  84: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/scannerfood/status/1840831157170008069',
+    'latitude': 35.9159,
+    'longitude': -82.0698
+  },
+  85: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/katwrappah/status/1840013159098089746',
+    'latitude': 35.9156,
+    'longitude': -82.0758
+  },
+  86: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/T00ManyCommies/status/1840053094224167198',
+    'latitude': 35.8331,
+    'longitude': -82.0896
+  },
+  87: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/katwrappah/status/1840012352822849632',
+    'latitude': 35.8496,
+    'longitude': -82.0649
+  },
+  88: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/PFKHealth/status/1840805345930985695',
+    'latitude': 35.5419,
+    'longitude': -82.3808
+  },
+  89: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/AaronRigsbyOSC/status/1840800944411288033',
+    'latitude': 35.6254,
+    'longitude': -82.1774
+  },
+  90: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/NelsonAerials/status/1840394071572934702',
+    'latitude': 35.6256,
+    'longitude': -82.1804
+  },
+  91: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/rail_dawg/status/1840584972886815050',
+    'latitude': 35.62934,
+    'longitude': -82.1874
+  },
+  92: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/T00ManyCommies/status/1840551006733525160',
+    'latitude': 35.6271,
+    'longitude': -82.1812
+  },
+  93: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/RiskyChrisky/status/1842308691460255812',
+    'latitude': 35.5581,
+    'longitude': -82.3174
+  },
+  94: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/GardensR4Health/status/1842010043996127255',
+    'latitude': 35.5533,
+    'longitude': -82.3259
+  },
+  95: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/Majac00/status/1843016748590919937',
+    'latitude': 35.5786,
+    'longitude': -82.5190
+  },
+  96: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/severeforecast/status/1840557762616455394',
+    'latitude': 35.3185,
+    'longitude': -80.9896
+  },
+  97: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/severeforecast/status/1839775061567516899',
+    'latitude': 35.3349,
+    'longitude': -82.6520
+  },
+  98: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/MakingtheDoh/status/1843376776963387421',
+    'latitude': 35.7379,
+    'longitude': -82.1349
+  },
+  99: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/TaylorThompTV/status/1839774930600071448',
+    'latitude': 35.7839,
+    'longitude': -82.4883
+  },
+  100: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/BANANAPHONE0017/status/1849965735935693084',
+    'latitude': 35.7655,
+    'longitude': -82.4335
+  },
+  101: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/brandon_macer/status/1843625023262818431',
+    'latitude': 35.7649,
+    'longitude': -82.4332
+  },
+  102: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/cicispizzaaa/status/1841686201767432440',
+    'latitude': 35.7781,
+    'longitude': -82.4593
+  },
+  103: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/nailbender1974/status/1848679332824133680',
+    'latitude': 36.0352,
+    'longitude': -82.2965
+  },
+  104: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/FunkerActual/status/1845823575443267847',
+    'latitude': 36.0365,
+    'longitude': -82.2958
+  },
+  105: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/RonnieAdkins_/status/1844443297831583780',
+    'latitude': 36.0359,
+    'longitude': -82.2951
+  },
+  106: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/LeanneSpurs/status/1850104704484659443',
+    'latitude': 36.01567,
+    'longitude': -82.3513
+  },
+  107: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/LeanneSpurs/status/1850101717448212917',
+    'latitude': 36.0003,
+    'longitude': -82.3584
+  },
+  108: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/LeanneSpurs/status/1850071742493999168',
+    'latitude': 36.0094,
+    'longitude': -82.3475
+  },
+  109: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/LeanneSpurs/status/1850064943942344870',
+    'latitude': 35.9947,
+    'longitude': -82.3733
+  },
+  110: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/Creeker1775/status/1843107195162096085',
+    'latitude': 36.0006,
+    'longitude': -82.3576
+  },
+  111: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/1Nicdar/status/1846131789418344940',
+    'latitude': 36.0821,
+    'longitude': -82.3500
+  },
+  112: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/its_The_Dr/status/1844370066831204804',
+    'latitude': 36.0688,
+    'longitude': -82.3423
+  },
+  113: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/EastTNHiking/status/1840570439279448462',
+    'latitude': 36.0718,
+    'longitude': -82.3987
+  },
+  114: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/mikealsip/status/1841704175358431539',
+    'latitude': 36.0050,
+    'longitude': -82.2359
+  },
+  115: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/EastTNHiking/status/1848722125793738989',
+    'latitude': 36.0157,
+    'longitude': -82.1979
+  },
+  116: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/ford_engine/status/1845285062062797154',
+    'latitude': 36.0120,
+    'longitude': -82.1508
+  },
+  117: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/matt_vanswol/status/1846653449716543765',
+    'latitude': 35.6235,
+    'longitude': -82.5808
+  },
+  118: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/matt_vanswol/status/1846287460793249795',
+    'latitude': 35.6676,
+    'longitude': -82.4775
+  },
+  119: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/matt_vanswol/status/1845913514814140427',
+    'latitude': 35.6641,
+    'longitude': -82.4783
+  },
+  120: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/matt_vanswol/status/1840771093583303005',
+    'latitude': 35.6877,
+    'longitude': -82.5529
+  },
+  121: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/GEZUPA/status/1842777604249788436',
+    'latitude': 35.5260,
+    'longitude': -82.3051
+  },
+  122: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/thinktankfranks/status/1850971802811461905',
+    'latitude': 35.5581,
+    'longitude': -82.3162
+  },
+  123: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/thinktankfranks/status/1850733198839304304',
+    'latitude': 35.5706,
+    'longitude': -82.5371
   }
 }
 
@@ -436,17 +754,50 @@ let lastClickedMarker = null;
 
 // Function to load tweets as markers on the MapLibre map
 const loadTweetMarkers = (map, media) => {
+  let previousMarker = null; // Variable to store the previously selected marker
+  let marker = null;
+  const defaultColor = '#32537E'; // Default color for markers
+  const selectedColor = '#ff8800'; // Color for the selected marker
+
     Object.keys(media).forEach((key) => {
         const tweetData = media[key];
 
-        // Create a MapLibre marker at the given latitude and longitude
-        const marker = new maplibregl.Marker()
-            .setLngLat([tweetData.longitude, tweetData.latitude])
-            .addTo(map);
+        if (key == 40) {
+          // Create a MapLibre marker at the given latitude and longitude
+          marker = new maplibregl.Marker({color: selectedColor})
+              .setLngLat([tweetData.longitude, tweetData.latitude])
+              .addTo(map);
+
+          marker.getElement().style.zIndex = '1000'
+
+          previousMarker = marker
+        } else {
+          // Create a MapLibre marker at the given latitude and longitude
+          marker = new maplibregl.Marker({color: defaultColor})
+              .setLngLat([tweetData.longitude, tweetData.latitude])
+              .addTo(map);
+        }
 
         // Load Twitter widgets script when the marker is clicked
         marker.getElement().addEventListener('click', () => {
+
           console.log(key)
+          // Revert the color of the previous marker
+            if (previousMarker) {
+                previousMarker.remove();
+                new maplibregl.Marker({ color: defaultColor })
+                    .setLngLat(previousMarker.getLngLat())
+                    .addTo(map);
+            }
+
+          marker.remove()
+
+          const newMarker = new maplibregl.Marker({color: selectedColor})
+              .setLngLat([tweetData.longitude, tweetData.latitude])
+              .addTo(map);
+
+          // Update the previousMarker variable
+          previousMarker = newMarker;
 
           const tweetContainer = document.getElementById('tweet-container');
           tweetContainer.innerHTML = '';
@@ -487,7 +838,7 @@ blockquote.className = 'twitter-tweet';
 
 // Create the anchor element for the tweet URL
 const anchor = document.createElement('a');
-anchor.href = media[0].url;
+anchor.href = media[40].url;
 
 // Append the anchor to the blockquote
 blockquote.appendChild(anchor);
