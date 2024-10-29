@@ -784,6 +784,30 @@ const media = {
     'latitude': 36.6351,
     'longitude': -81.7893
   },
+  130: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/MarcusHylton/status/1851256714093351248',
+    'latitude': 35.5327,
+    'longitude': -82.9075
+  },
+  131: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/m3_melody/status/1843703969480356323',
+    'latitude': 36.1583,
+    'longitude': -82.5945
+  },
+  132: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/voglerweather/status/1851269905703743938',
+    'latitude': 35.3921,
+    'longitude': -82.3738
+  },
+  133: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/andrewprice0311/status/1851260897378849148',
+    'latitude': 35.8564,
+    'longitude': -82.1347
+  },
   99999: {
     'type': 'tweet',
     'url': '',

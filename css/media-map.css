@@ -17,6 +17,7 @@
   width: 25vw;
   height: 90vh;
   overflow-y: scroll;
+  background-color: white;
 }
 
 #info-container h1 {
