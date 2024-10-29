@@ -759,6 +759,36 @@ const media = {
     'url': 'https://twitter.com/BrugalPapi/status/1840428939577077979',
     'latitude': 35.4688,
     'longitude': -82.3267
+  },
+  126: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/voglerweather/status/1841113751811994100',
+    'latitude': 35.3971,
+    'longitude': -82.3162
+  },
+  127: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/T00ManyCommies/status/1841867867718840598',
+    'latitude': 35.8747,
+    'longitude': -81.9432
+  },
+  128: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/babowling12/status/1841652027199201595',
+    'latitude': 36.6441,
+    'longitude': -81.7422
+  },
+  129: {
+    'type': 'tweet',
+    'url': 'https://twitter.com/Appalachistani/status/1840901916496445551',
+    'latitude': 36.6351,
+    'longitude': -81.7893
+  },
+  99999: {
+    'type': 'tweet',
+    'url': '',
+    'latitude': -65.3971,
+    'longitude': 100.3162
   }
 }
 

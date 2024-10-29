@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+#popup-alert {
+  display: none;
+}
+
 #top-container {
   display: flex;
   align-items: center;
@@ -82,4 +86,31 @@
     width: 100%;
     margin-top: 2vh;
   }
+
+  #popup-alert {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+    width: 80%;
+    height: 30vh;
+    padding: 1vh;
+    font-size: 2vh;
+    text-align: center;
+    margin-inline: auto;
+    background-color: white;
+    border: 1px solid gray;
+    box-shadow: 0 0 4vh black;
+    z-index: 10000;
+  }
+
+  /* #popup-content {
+
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+  } */
 }

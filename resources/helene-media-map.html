@@ -24,6 +24,13 @@
     <script type="text/javascript">WebFont.load({  google: {    families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"]  }});</script>
     <script src='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js'></script>
     <link href='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css' rel='stylesheet' />
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "oq73j71mqx");
+    </script>
   </head>
   <body>
     <div id="header">
@@ -41,6 +48,13 @@
       </div>
     </div>
     <div id="mainbody">
+      <div id="popup-alert">
+        <p style="position: absolute; top: 0.7vh; right: 1vh; margin: 0; font-weight: bold; text-decoration: underline; font-size: 2.5vh;" onclick="document.getElementById('popup-alert').style.display='none'">x</p>
+        <p style="margin-top: 5vh;">For a better viewing experience, consider loading this webpage on a computer.</p>
+        <p style="margin-bottom: 5vh;">If continuing on mobile, please close this popup and scroll to see the full extent of each tweet that displays above the map.</p>
+        <!-- <div id="popup-content">
+        </div> -->
+      </div>
       <div id="top-container">
         <div id="info-container">
           <h1>Damage Report</h1>
@@ -58,7 +72,7 @@
       </div>
       <div id="map-info-container">
         <div id="map-info">
-          <p>Each report was sourced from Twitter/X and geolocated to provide a sense of scale following the devestation wrought by Hurricane Helene.</p>
+          <p>Each report was sourced from Twitter/X and geolocated to provide a sense of scale following the devastation wrought by Hurricane Helene.</p>
           <p>Residents in the Southern Appalachians were brought to their knees by the storm, but they did not stay there for long. Countless volunteers brought supplies and donated their time to help us regain our footing. It will be months and even years before many areas see a return to normal, but these people are the very definition of resilient.</p>
           <p>Please continue to support those who lost everything in the months to come. We will share some ways that you can help on this page shortly. Thank you to everyone who has loved on our region over the past month. Your generosity will not be forgotten.</p>
           <p>Lastly, I want to give a special thank you to <a href="https://twitter.com/jackendrickwx" target="_blank">Jack Kendrick</a> who faithfully assisted in the geolocation of many of these reports.</p>
