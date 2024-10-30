@@ -16,7 +16,17 @@
       "maxzoom": 24,
       "encoding": "terrarium",
       "tileSize": 256
-    }
+    },
+    "hillshade": {
+        "type": "raster-dem",
+        "tiles": [
+          "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"
+        ],
+        "minzoom": 0,
+        "maxzoom": 24,
+        "encoding": "terrarium",
+        "tileSize": 512
+      }
   },
   "sprite": "https://tiles.basemaps.cartocdn.com/gl/voyager-gl-style/sprite",
   "glyphs": "https://tiles.basemaps.cartocdn.com/fonts/{fontstack}/{range}.pbf",
@@ -293,14 +303,14 @@
       }
     },
     {
-      "id": "terrain",
+      "id": "hillshade",
       "type": "hillshade",
-      "source": "terrain",
+      "source": "hillshade",
       "minzoom": 0,
       "maxzoom": 24,
       "paint": {
         "hillshade-illumination-direction": 335,
-        "hillshade-exaggeration": 0.2,
+        "hillshade-exaggeration": 0.3,
         "hillshade-shadow-color": "rgba(0, 0, 0, 1)"
       }
     },
