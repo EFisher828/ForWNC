@@ -51,6 +51,21 @@ map.on('load', () => {
 
   addDamage(1, 'low-res')
 
+  // map.addSource('extent-source', {
+  //   'type': 'geojson',
+  //   'data': '../data/helene/tree-damage-extent.geojson'
+  // });
+  //
+  // map.addLayer({
+  //   'id': 'extent-layer',
+  //   'type': 'line',
+  //   'source': 'extent-source',
+  //   'paint': {
+  //     'line-color': 'red',
+  //     'line-width': 3
+  //   }
+  // });
+
   // map.addSource('fbv-nc-source', {
   //   'type': 'image',
   //   'url': `../data/helene/FBVNCFloat_0.png`, // Initial date
@@ -270,16 +285,45 @@ const toggleLegendContainer = () => {
 
 const updateDamageLayerOpacity = () => {
     const sliderValue = document.getElementById('damage-opacity-slider').value;
-    console.log(sliderValue)
-    layers.forEach(layer => {
-      console.log(`${layer}-layer`)
-      console.log(parseFloat(sliderValue))
-      map.setPaintProperty(`${layer}-layer`, 'raster-opacity', parseFloat(sliderValue));
-    })
+    const opacity = parseFloat(sliderValue);
+
+    if (map.getSource('low-res-source')) {
+        // Remove the layer
+        map.removeLayer('low-res-layer');
+
+        // Update the paint property
+        map.addLayer({
+            'id': 'low-res-layer',
+            'type': 'raster',
+            'source': 'low-res-source',
+            'paint': {
+                'raster-opacity': opacity,
+                'raster-fade-duration': 0,
+                'raster-resampling': "nearest"
+            }
+        }, 'boundary_county');
+
+    } else if (map.getSource('high-res-source')) {
+        // Remove the layer
+        map.removeLayer('high-res-layer');
+
+        // Update the paint property
+        map.addLayer({
+            'id': 'high-res-layer',
+            'type': 'raster',
+            'source': 'high-res-source',
+            'paint': {
+                'raster-opacity': opacity,
+                'raster-fade-duration': 0,
+                'raster-resampling': "nearest"
+            }
+        }, 'boundary_county');
+    }
+    map.triggerRepaint()
 }
 
 // Add event listener to the toggle button
-document.getElementById('opacity-toggle').addEventListener('click', toggleSliderContainer);
+// document.getElementById('opacity-toggle').addEventListener('click', toggleSliderContainer);
 document.getElementById('legend-toggle').addEventListener('click', toggleLegendContainer);
 
 // Add event listener to the slider to update the layer opacity
