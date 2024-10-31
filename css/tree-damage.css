@@ -4,6 +4,16 @@
   margin: 0;
 }
 
+#popup-alert {
+  display: none;
+}
+
+
+.mapboxgl-ctrl-group button, .maplibregl-ctrl-group button {
+  width: 4vh !important;
+  height: 4vh !important
+}
+
 .opacity-control {
     position: absolute;
     top: 11vh;
@@ -15,6 +25,14 @@
     position: absolute;
     top: 11vh;
     right: 9.5vh;
+    z-index: 1;
+}
+
+
+.resolution-control {
+    position: absolute;
+    top: 11vh;
+    left: 9.5vh;
     z-index: 1;
 }
 
@@ -38,6 +56,46 @@
 .control-button img {
   width: 80%;
   height: auto;
+}
+
+.resolution-button {
+    background-color: #fff;
+    border: none;
+    width: max-width;
+    height: 4vh;
+    cursor: pointer;
+    border-radius: 0.7vh;
+    font-size: 2vh;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, .1);
+    border: 0.1vh solid rgba(0,0,0,0.3);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    color: black;
+}
+
+.resolution-option {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 1vh;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.resolution-option:hover {
+  background-color: #32537E;
+  color: white;
+  opacity: 1;
+}
+
+.active-resolution {
+  background-color: #122A4A;
+  color: white;
+  opacity: 1;
 }
 
 .slider-container {
@@ -141,6 +199,10 @@
       top: 16vh;
   }
 
+  .resolution-control {
+      top: 16vh;
+  }
+
   #map {
     height: 75vh;
   }
@@ -148,5 +210,24 @@
   #map-info {
     padding-top: 1vh;
     padding-bottom: 1vh;
+  }
+
+  #popup-alert {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+    width: 80%;
+    padding: 1vh;
+    font-size: 2vh;
+    text-align: center;
+    margin-inline: auto;
+    background-color: white;
+    border: 1px solid gray;
+    box-shadow: 0 0 4vh black;
+    z-index: 10000;
   }
 }

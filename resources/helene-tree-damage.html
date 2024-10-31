@@ -47,9 +47,34 @@
       </div>
     </div>
     <div id="mainbody">
+      <div id="popup-alert">
+        <p style="position: absolute; top: 0.7vh; right: 1vh; margin: 0; font-weight: bold; text-decoration: underline; font-size: 2.5vh;" onclick="document.getElementById('popup-alert').style.display='none'">x</p>
+        <p style="margin-top: 5vh;">To view high-resolution data, please load this webpage on a computer with a larger screen.</p>
+      </div>
       <div id="opacity-control" class="opacity-control">
           <div id="opacity-toggle" class="control-button"><img src="../Images/icon-map-layers.png" alt="legend icon"></div>
           <div id="opacity-slider-container" class="slider-container">
+              <!-- <p id="opacity-slider-title">Opacity Controls</p> -->
+              <div class='slider-pair'>
+                <p style="text-decoration: underline;margin-left: 4vh;">Layer</p>
+                <p style="text-decoration: underline;margin-right: 4vh;">Opacity</p>
+              </div>
+              <div class='slider-pair'>
+                <p>Wind Damage</p>
+                <input type="range" class="opacity-slider" id="damage-opacity-slider" min="0" max="1" step="0.01" value="1">
+              </div>
+          </div>
+      </div>
+      <div id="resolution-control" class="resolution-control">
+          <div id="resolution-toggle" class="resolution-button">
+            <div id="low-res" class="resolution-option active-resolution" style="border-right: 0.1vh solid rgba(0,0,0,0.3);border-radius: 0.7vh 0 0 0.7vh;">
+              Low-Res
+            </div>
+            <div id="high-res" class="resolution-option" style="border-radius: 0 0.7vh 0.7vh 0;">
+              High-Res
+            </div>
+          </div>
+          <div id="resolution-slider-container" class="slider-container">
               <!-- <p id="opacity-slider-title">Opacity Controls</p> -->
               <div class='slider-pair'>
                 <p style="text-decoration: underline;margin-left: 4vh;">Layer</p>

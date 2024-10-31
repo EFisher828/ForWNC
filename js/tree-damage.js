@@ -8,24 +8,12 @@ const map = new maplibregl.Map({
   zoom: 8.17
 });
 
-const layers = ['fbv-nc','nw-nc','foot-nc','sw-nc','sw-fbv','etn','e-nw-nc','ssw-nc','e-us']
+const screenWidth = window.innerWidth;
 
-map.on('load', () => {
-  map.addControl(new maplibregl.NavigationControl());
-
-  // Select all elements with the class 'maplibregl-ctrl-top-right'
-  let elements = document.querySelectorAll('.maplibregl-ctrl-top-right ');
-
-  // Iterate over the selected elements and change their CSS
-  elements.forEach(element => {
-    element.style.right = '1.3vh'
-    element.style.top = '7vh'
-    element.boxShadow = '0 0 1vh black'
-  });
-
-  map.addSource('main-source', {
+const addDamage = (res, name) => {
+  map.addSource(`${name}-source`, {
     'type': 'image',
-    'url': `../data/helene/Clippedmask_0.png`, // Initial date
+    'url': `../data/helene/Clippedmask_${res}.png`, // Initial date
     'coordinates': [
       [-83.6473, 37.5228],
       [-80.7288, 37.5228],
@@ -35,15 +23,33 @@ map.on('load', () => {
   });
 
   map.addLayer({
-    'id': 'main-layer',
+    'id': `${name}-layer`,
     'type': 'raster',
-    'source': 'main-source',
+    'source': `${name}-source`,
     'paint': {
       'raster-opacity': 1,
       'raster-fade-duration': 0,
       'raster-resampling': "nearest"
     }
   }, 'boundary_county');
+}
+
+const layers = ['fbv-nc','nw-nc','foot-nc','sw-nc','sw-fbv','etn','e-nw-nc','ssw-nc','e-us']
+
+map.on('load', () => {
+  map.addControl(new maplibregl.NavigationControl(), 'top-left');
+
+  // Select all elements with the class 'maplibregl-ctrl-top-right'
+  let elements = document.querySelectorAll('.maplibregl-ctrl-top-left');
+
+  // Iterate over the selected elements and change their CSS
+  elements.forEach(element => {
+    element.style.left = '1.3vh'
+    element.style.top = '7vh'
+    element.boxShadow = '0 0 1vh black'
+  });
+
+  addDamage(1, 'low-res')
 
   // map.addSource('fbv-nc-source', {
   //   'type': 'image',
@@ -278,3 +284,61 @@ document.getElementById('legend-toggle').addEventListener('click', toggleLegendC
 
 // Add event listener to the slider to update the layer opacity
 document.getElementById('damage-opacity-slider').addEventListener('input', updateDamageLayerOpacity);
+
+const toggleResolution = (e) => {
+  const targetRes = e.target.id
+
+  let targetDiv = document.getElementById(targetRes)
+  let altDiv;
+
+  if (targetRes == 'low-res') {
+    altDiv = document.getElementById('high-res')
+  } else {
+    altDiv = document.getElementById('low-res')
+  }
+
+  if (!targetDiv.classList.contains('active-resolution')) {
+    targetDiv.classList.add('active-resolution');
+    altDiv.classList.remove('active-resolution');
+
+    if (targetRes == 'low-res') {
+      if (map.getSource('high-res-source')) {
+        map.removeLayer('high-res-layer')
+        map.removeSource('high-res-source')
+      }
+
+      addDamage(1, 'low-res')
+
+    } else {
+      if (map.getSource('low-res-source')) {
+        map.removeLayer('low-res-layer')
+        map.removeSource('low-res-source')
+      }
+
+      addDamage(0, 'high-res')
+
+    }
+
+    map.triggerRepaint();
+  }
+}
+
+const resolutionPopup = () => {
+  document.getElementById('popup-alert').style.display='flex'
+}
+
+if (screenWidth > 1024) {
+  document.getElementById('low-res').addEventListener('click', toggleResolution);
+  document.getElementById('high-res').addEventListener('click', toggleResolution);
+} else {
+  document.getElementById('high-res').addEventListener('click', resolutionPopup);
+}
+
+// const toggleHighResolution = () => {
+//   const lowRes = document.getElementById('low-res');
+//   const highRes = document.getElementById('high-res');
+//   if !(divElement.classList.contains('active-resolution')) {
+//     lowRes.classList.add('active-resolution');
+//     highRes.classList.remove('active-resolution');
+//   }
+// }
