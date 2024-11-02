@@ -173,14 +173,24 @@ span {
   color: white;
 }
 
+.forecast-pair {
+  display: flex;
+  align-items: center;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .forecast {
-  max-width: 800px;
+  width: 40vw;
+  /* max-width: 800px; */
   margin: 20px auto;
   padding: 4px 20px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   transition: 0.2s;
+  /* margin: 2vh; */
 }
 
 .forecast a {
@@ -312,11 +322,16 @@ span {
   }
 
   .forecast {
-    width: 80%;
+    width: 80vw;
   }
 
   #aboutdescription {
     text-align: left;
+  }
+
+  .forecast-pair {
+    flex-direction: column;
+    width: 90vw;
   }
 
 }

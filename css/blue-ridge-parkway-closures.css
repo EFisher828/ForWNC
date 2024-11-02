@@ -1,0 +1,180 @@
+#map {
+  width: 100%;
+  height: 90vh;
+  margin: 0;
+}
+
+.mapboxgl-ctrl-group button, .maplibregl-ctrl-group button {
+  width: 4vh !important;
+  height: 4vh !important
+}
+
+.brp-header {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.legend-image {
+  position: absolute;
+  border-radius: 1.3vh;
+  -moz-box-shadow: 0 0 1vh black;
+  -webkit-box-shadow: 0 0 1vh black;
+  box-shadow: 0 0 1vh black;
+  width: 15vh;
+  top: 11vh; /* Adjust the vertical position as needed */
+  left: 2.5vh; /* Adjust the horizontal position as needed */
+  z-index: 1000; /* Make sure the image appears on top of the map */
+}
+
+.opacity-control {
+    position: absolute;
+    top: 11vh;
+    left: 2.5vh;
+    z-index: 1;
+}
+
+.info-control {
+    position: absolute;
+    top: 11vh;
+    right: 2.5vh;
+    z-index: 1;
+}
+
+.control-button {
+    background-color: #fff;
+    border: none;
+    width: 4vh;
+    height: 4vh;
+    cursor: pointer;
+    border-radius: 0.6vh;
+    font-size: 2vh;
+    box-shadow: 0 0 1vh black;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+
+.control-button img {
+  width: 80%;
+  height: auto;
+}
+
+.slider-container {
+    display: none;
+    background-color: #fff;
+    padding: 0.5vh;
+    margin-top: 2vh;
+    box-shadow: 0 0 1vh black;
+    font-size: 2vh;
+}
+
+.opacity-slider {
+    width: 15vh;
+    margin-left: 2vh;
+}
+
+.slider-pair {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1vh;
+}
+
+.slider-pair p {
+  margin: 1vh 0;
+}
+
+#opacity-slider-title {
+  font-style: italic;
+  margin: 1vh;
+}
+
+.legend-control {
+    position: absolute;
+    top: 11vh;
+    right: 2.5vh;
+    z-index: 1;
+}
+
+#legend-slider-container {
+  position: absolute;
+  right: 0;
+}
+
+#info-toggle {
+  font-weight: bold;
+}
+
+.continuous-legend {
+  height: 20vh;
+  margin-left: 2vh;
+}
+
+.continuous-labels {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 20vh;
+  text-align: center;
+  font-size: 2vh;
+}
+
+#map-info-container {
+  /* margin: 0; */
+  /* padding: 0; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #32537E;
+  max-width: 100vw;
+}
+
+#map-info {
+  /* margin: 0; */
+  width: 80%;
+  background-color: white;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+#map-info p {
+  padding: 1vh 4vh;
+}
+
+.section-link {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .legend-image {
+    top: 16vh;
+    border-radius: 0.5vh;
+    width: 10vh;
+  }
+
+  .opacity-control {
+      top: 16vh;
+  }
+
+  .legend-control {
+      top: 16vh;
+  }
+
+  .info-control {
+      top: 16vh;
+  }
+
+  #map {
+    height: 75vh;
+  }
+
+  #map-info {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
+}
