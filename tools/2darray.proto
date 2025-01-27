@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message Array2D {
+    repeated Row rows = 1;
+
+    message Row {
+        repeated float values = 1;
+    }
+}

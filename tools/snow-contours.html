@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Snow Map Builder</title>
+    <script src='https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js'></script>
+    <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css' />
+    <script src="https://cdn.jsdelivr.net/npm/protobufjs@7.4.0/dist/protobuf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.0.4/pako.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@7/turf.min.js"></script>
+    <link rel="stylesheet" href="./css/snow-contours.css">
+  </head>
+  <body>
+    <div id="mainContainer">
+      <div id="map"></div>
+      <div id="topLeft">
+        <button type="button" name="start" onclick="collectMeta()">Generate Contours</button><br>
+        <button type="button" name="start" onclick="enableVertexMoving()">Edit Vertices</button><br>
+        <button type="button" name="smooth" onclick="smoothPolygon()">Smooth Polygon</button><br>
+        <button type="button" name="download" onclick="addForecast()">Add Forecast</button><br>
+        <button type="button" name="download" onclick="downloadMap()">Download Map</button><br>
+      </div>
+      <div id="middle">
+        <div id="middleClose">x</div>
+        <div id="snowLevels"></div>
+        <div id="addLevelControl">
+          <div id="addLevelButton">+</div>
+          <input type="text" name="bottom" value="" id="bottomLevel">
+          <p>to</p>
+          <input type="text" name="top" value="" id="topLevel">
+        </div>
+        <button type="button" name="submitMeta" onclick="generateContours()">Generate</button>
+      </div>
+      <div id="topRight">
+
+      </div>
+      <div id="bottomLeft">
+        <div><input type="checkbox" name="nbm" value="nbm" onclick="toggleNBM(event)"><label for="nbm">Toggle NBM</label></div>
+        <!-- <button type="button" name="contour" onclick="generateContours()">Generate Contours</button> -->
+      </div>
+    </div>
+    <script type="module">
+      import marchingsquares from 'https://cdn.jsdelivr.net/npm/marchingsquares@1.3.3/+esm'
+    </script>
+    <script type="text/javascript" src="./js/snow-contours-map.js"></script>
+    <script type="text/javascript" src="./js/snow-map-models.js"></script>
+    <script type="text/javascript" src="./js/snow-map-dictionary.js"></script>
+    <script type="text/javascript" src="./js/snow-map-download.js"></script>
+    <script type="text/javascript" src="./js/snow-map-contourf.js"></script>
+  </body>
+</html>
